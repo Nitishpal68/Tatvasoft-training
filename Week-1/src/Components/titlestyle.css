@@ -1,0 +1,13 @@
+.table-id{
+    color: orange;
+    font-size: 54;
+}
+.title{
+    color: crimson;
+    font-size: 18;
+}
+.description{
+    color: hotpink;
+    font-size: 14;
+    background-color: antiquewhite;
+}

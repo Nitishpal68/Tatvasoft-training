@@ -1,0 +1,27 @@
+.App {
+  
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color:black;
+  padding: 10px;
+  font-size: 18px;
+  /* font-weight: bold; */
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.App-ul{
+  color:black;
+  font-style: italic;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
