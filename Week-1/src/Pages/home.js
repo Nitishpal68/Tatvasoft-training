@@ -20,21 +20,25 @@ class Home extends Component {
   };
   // conditional & ternary rendering
   render() {
-    return this.state.isloggedIn ? <div>Hello world</div> : <div>Bye</div>;
+    return this.state.isloggedIn ? (
+      <div>Hello world This is Nitish </div>
+    ) : (
+      <div>Sorry User is not logged in</div>
+    );
 
     // return (
     //   <div>
-    //     //{" "}
-    //     {/* home
-    // //     <br></br>
-    // //     <Title
-    // //       title={this.state.title}
-    // //       description={this.state.description}
-    // //       name="Nitish"
-    // //     ></Title> */}
-    //     // <p>Hello I am inside home Page</p>
-    //     <button onClick={this.clickHandeler}> aboutpage </button>;
-    //   </div>
+    //     {" "}
+    //     home
+    //     <br></br>
+    //     <Title
+    //       title={this.state.title}
+    //       description={this.state.description}
+    //       name="Nitish"
+    //     ></Title>
+    // <p>Hello I am inside home Page</p>
+    // <button onClick={this.clickHandeler}> aboutpage </button>;
+    // </div>
     // );
   }
 }

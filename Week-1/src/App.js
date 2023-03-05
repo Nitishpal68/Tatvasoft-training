@@ -9,29 +9,41 @@ import About from "./Pages/About";
 import Title from "./Components/title";
 import List from "./Components/List";
 import Form from "./Components/Form";
-import Registration from "./Pages/Registration";
 
 // import Person from "./Components/Person";
 
 function App() {
+  function AlertHandler(data) {
+    alert(data);
+  }
+
+  const description = "Data is passed from Parent Component ";
+
   return (
-    <div className="App">
-      <header>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "80vh",
+      }}
+    >
+      <div className="App">
         React Week 1<br></br>
-        {/* <Counter />
+        {/* Counter Clicks */}
+        {/* <Counter></Counter> */}
         <br></br>
-        <Functionclick></Functionclick>
+        {/* <Functionclick></Functionclick> */}
         {/* <Person></Person> */}
         {/* <Classclick></Classclick> */}
-        <br></br>
         {/* <About></About> */}
+        {/* -- Conditional Rendering -- */}
         {/* <Home></Home> */}
-        <List></List>
-        <Title></Title>
-        Login Form
-        <Form></Form>
-        <Registration></Registration>
-      </header>
+        {/* <List></List> */}
+        <Title alert={AlertHandler} Description={description}></Title>
+        {/* Login Form */}
+        {/* <Form></Form> */}
+      </div>
     </div>
   );
 }

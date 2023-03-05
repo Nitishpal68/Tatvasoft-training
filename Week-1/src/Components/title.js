@@ -5,7 +5,7 @@ import "./titlestyle.css";
 //Rendering list data in form of table
 //Adding CSS in title page
 
-function Title({ name, title, description, id }) {
+function Title({ name, title, Description, id, usernameName }) {
   // return (
   //   <div>
   //     Hello world I ' m {name}
@@ -28,15 +28,21 @@ function Title({ name, title, description, id }) {
     //       <td>{description}</td>
     //     </tr>
     //   </table>
-
     // </>
     <>
-      <label>--Title--</label>
+      {/* <label>--Title--</label>
       <p className="title">This is a title page</p>
       <label>--Description--</label>
       <p className="description">
         Heaven is under our feet as well as over our heads
-      </p>
+      </p> */}
+
+      <h3>Child Component</h3>
+
+      <button onClick={() => alert("Data passed from child component")}>
+        Click Me
+      </button>
+      <p>Hello : {Description} </p>
     </>
   );
 }

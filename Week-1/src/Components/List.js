@@ -21,14 +21,14 @@ function List() {
   ];
 
   var formattedoutput = details.map((x, index) => {
-    // return (
-    // //   <Title
-    // //     key={index}
-    // //     id={x.id}
-    // //     title={x.title}
-    // //     description={x.description}
-    // //   ></Title>
-    // );
+    return (
+      <Title
+        key={index}
+        id={x.id}
+        title={x.title}
+        description={x.description}
+      ></Title>
+    );
   });
 
   return <div>{formattedoutput}</div>;

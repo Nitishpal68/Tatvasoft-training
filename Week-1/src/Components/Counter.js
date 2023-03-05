@@ -23,8 +23,9 @@ class Counter extends Component {
   render() {
     return (
       <div>
-        click - {this.state.count}
         <button onClick={() => this.incremeter()}> Incrementer </button>
+        <br></br>
+        click - {this.state.count}
       </div>
     );
   }
