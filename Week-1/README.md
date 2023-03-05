@@ -22,3 +22,5 @@ Adding CSS in title page
 ### 5) Conditional Rendering using If Else
 ![1](https://user-images.githubusercontent.com/72151454/222949730-36e6ba9f-4649-4bb0-9f1f-c545215fadd9.PNG)
 
+### 6) Passing Data from child to parent
+![2](https://user-images.githubusercontent.com/72151454/222952266-d121ef6f-acf8-45f6-9cc9-eac2d166084d.PNG)
