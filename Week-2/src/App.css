@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  min-height: 100vh;
+  padding: 20px 0px 0px 0px;
 }
 
 .App-logo {
@@ -22,7 +29,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  align-content: space-between;
 }
+
+
 
 .App-link {
   color: #61dafb;
