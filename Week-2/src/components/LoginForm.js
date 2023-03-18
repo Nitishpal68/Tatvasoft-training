@@ -1,6 +1,6 @@
 import React from "react";
 import { useFormik } from "formik";
-import { TextField } from "@mui/material";
+import { FormHelperText, TextField } from "@mui/material";
 import { Button } from "@mui/material";
 import { Typography } from "@mui/material";
 import { Grid } from "@mui/material";
@@ -24,7 +24,8 @@ const validationSchema = yup.object({
     .oneOf(
       [yup.ref("password"), null],
       "Password and confirm password does not match"
-    ),
+    )
+    .required("confirm password is required"),
 });
 function LoginForm() {
   const formik = useFormik({
@@ -63,10 +64,10 @@ function LoginForm() {
               value={formik.values.Username}
               onChange={formik.handleChange}
               error={formik.touched.Username && Boolean(formik.errors.Username)}
-              helperText={formik.touched.Username && formik.errors.Username}
             />
             <br></br>
-
+            {formik.touched.Username && formik.errors.Username}
+            <br></br>
             <TextField
               id="email"
               label="email"
@@ -76,11 +77,10 @@ function LoginForm() {
               value={formik.values.email}
               onChange={formik.handleChange}
               error={formik.touched.email && Boolean(formik.errors.email)}
-              helperText={formik.touched.email && formik.errors.email}
             />
-
             <br></br>
-
+            {formik.touched.email && formik.errors.email}
+            <br></br>
             <TextField
               id="password"
               label="password"
@@ -91,11 +91,10 @@ function LoginForm() {
               value={formik.values.password}
               onChange={formik.handleChange}
               error={formik.touched.password && Boolean(formik.errors.password)}
-              helperText={formik.touched.password && formik.errors.password}
             />
-
             <br></br>
-
+            {formik.touched.password && formik.errors.password}
+            <br></br>
             <TextField
               id="confirmpassword"
               label="confirm password"
@@ -109,13 +108,10 @@ function LoginForm() {
                 formik.touched.confirmpassword &&
                 Boolean(formik.errors.confirmpassword)
               }
-              helperText={
-                formik.touched.confirmpassword && formik.errors.confirmpassword
-              }
             />
-
             <br></br>
-
+            {formik.touched.confirmpassword && formik.errors.confirmpassword}
+            <br></br>
             <Button
               variant="contained"
               type="submit"
