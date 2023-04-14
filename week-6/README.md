@@ -2,8 +2,6 @@
 ## Product Page
 
 
-https://user-images.githubusercontent.com/72151454/231799758-397641a3-7c7e-4ab3-b777-dc29d3f3d81a.mp4
-
-
+https://user-images.githubusercontent.com/72151454/231980598-478913a3-384d-4849-85ce-30eb79f97068.mp4
 
 
