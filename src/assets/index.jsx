@@ -1,1 +1,0 @@
-export const addIcon = require('./Tatvasoft-logo.svg').default;
